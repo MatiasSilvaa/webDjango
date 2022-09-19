@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Integrantes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <br>
+    
+    
+    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+        <h1>Listado de Integrantes</h1>
+        <div class="table-responsive py-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Edad</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for x in integrante%}
+                    <tr>
+                        <td>{{x.edad}}</td>
+                        <td>{{x.nombre}}</td>
+                        <td>{{x.apellido}}</td>
+                        <td>{{x.nacimiento}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
